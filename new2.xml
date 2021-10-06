@@ -4,4 +4,9 @@
 	<age>32</age>
 	<pets>3</pets>
 	<pay>650</pay>
+	<movie>Harry Potter </movie>
+	<Series>Friends</Series>
+	<food>Chili</food>
+	<Time_of_year>Summer</Time_of_year>
+	<Country>America</Country>
 </about_me>
