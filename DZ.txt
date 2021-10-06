@@ -1,0 +1,54 @@
+
+Первое ДЗ 
+до 04.10.2021
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я -    pwd
+2) Создать папку -   mkdir 1_aaaa
+  3) Зайти в папку -    cd 1_aaaa 
+  4) Создать 3 папки -     mkdir 2_aaaa 2_bbbb 2_cccc
+  5) Зайти в любоую папку -     cd 2_aaaa
+  6) Создать 5 файлов (3 txt, 2 json) -    touch 1.txt 2.txt 3.txt 1.json 2.json
+  7) Создать 3 папки -    mkdir 3_aaaa 3_bbbb 3_cccc
+  8. Вывести список содержимого папки -   ls -la
+9) + Открыть любой txt файл -      vim 1.txt
+10) + написать туда что-нибудь, любой текст.  -   i  "lalalalala" 
+11) + сохранить и выйти. -   (esc) :wq (enter)
+12) Выйти из папки на уровень выше -    cd ..
+—
+  13) переместить любые 2 файла, которые вы создали, в любую другую папку. - mv 1.txt 3_aaaa/1.txt 
+                                                                           mv 2.txt 3_aaaa/2.txt
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. -  cp 1.json 3_bbbb/1.json
+                                                                            сp 2.json 3_bbbb/2.json 
+15) Найти файл по имени -    find -name polina.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает - cat polina.txt
+17) вывести несколько первых строк из текстового файла head polina.txt если 10 строк (или head -n 3 polina.txt)
+18) вывести несколько последних строк из текстового файла  tail polina.txt (или tail -n 3 polina.txt)
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает  -    less polina.txt (q для выхода)
+20) вывести дату и время -     date
+=========
+
+Задание *
+1) Отправить http запрос на сервер. -   curl 'http://162.55.220.72:5005/get_method?name=Polina&age=32'
+http://162.55.220.72:5005/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+
+
+> myscript.sh
+vim myscript.sh
+i
+
+   #!/bin/bash
+   cd 1_aaaa
+   mkdir 2_aaaa 2_bbbb 2_cccc
+   cd 2_aaaa
+   touch 1.txt 2.txt 3.txt 1.json 2.json
+   mkdir 3_aaaa 3_bbbb 3_cccc
+   ls -la
+   mv 1.txt 3_aaaa/1.txt
+   mv 2.txt 3_aaaa/2.txt
+esc
+:wq
+bash mascript.sh 
+(все сработало)
