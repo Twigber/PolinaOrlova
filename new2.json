@@ -3,4 +3,9 @@
 	"age": 32,
 	"pets": 3,
 	"pay": 650
+	"movie": "Harry Potter",
+	"Series": "Friends",
+	"food": "Chili",
+	"Time_of_year": "summer",
+	"Country": "America",
 }
