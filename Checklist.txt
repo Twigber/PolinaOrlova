@@ -1,0 +1,8 @@
+Build (Версия сборки)
+Environment (окружение)
+Test date
+Tester
+Test type
+Checking (список проверок)
+Result
+Ссылка на багрепорт    
