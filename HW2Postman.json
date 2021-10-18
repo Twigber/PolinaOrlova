@@ -374,7 +374,7 @@
 							"var resp_JSON = pm.response.json();\r",
 							"pm.environment.set(\"name\", resp_JSON.name);\r",
 							"pm.environment.set(\"age\", resp_JSON.age);\r",
-							"pm.environment.set(\"salary\", resp_JSON.salary);\r",
+							"pm.environment.set(\"salary\", req_dat.salary);\r",
 							"\r",
 							"\r",
 							"let salary = {\r",
@@ -387,7 +387,7 @@
 							"    console.log(salary[key]);\r",
 							"}\r",
 							"\r",
-							""
+							"console.log(\"--\", resp_JSON.salary);"
 						],
 						"type": "text/javascript"
 					}
@@ -514,11 +514,6 @@
 							"for (let key in person) {\r",
 							"    console.log(person[key]);\r",
 							"}\r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -737,6 +732,35 @@
 					"port": "5005",
 					"path": [
 						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "Polina",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1366613",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}login",
+					"host": [
+						"{{url}}login"
 					]
 				}
 			},
