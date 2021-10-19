@@ -1,0 +1,39 @@
+{
+	"id": "57983549-5046-4f38-812e-1a5e12cad322",
+	"name": "Group_23",
+	"values": [
+		{
+			"key": "token",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "url",
+			"value": "http://162.55.220.72:5005/",
+			"enabled": true
+		},
+		{
+			"key": "name",
+			"value": "Polina",
+			"enabled": true
+		},
+		{
+			"key": "age",
+			"value": "age",
+			"enabled": true
+		},
+		{
+			"key": "salary",
+			"value": "2000",
+			"enabled": true
+		},
+		{
+			"key": "new_token",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-10-19T07:35:23.195Z",
+	"_postman_exported_using": "Postman/9.0.7"
+}
