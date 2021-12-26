@@ -1,8 +1,0 @@
-Bug id:
-Title:
-Environment:
-Precondition:
-STR:
-AR:
-ER:
-Attachments:
