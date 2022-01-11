@@ -16,41 +16,6 @@ def user_info():
         user_age = request.args.get('age')
         user_list = [user_name, user_age]
         return jsonify(user_list)
-    # elif request.method == 'POST':                возвращает Json
-    #     salary = int(request.form.get('salary'))
-    #     name = request.args.get('name')
-    #     age = request.args.get('age')
-    #     annualy = str(salary * 12)
-    #
-    #     resp_json = {
-    #         'name': name,
-    #         'age': age,
-    #         'annualy': annualy
-    #     }
-    #
-    #     resp_str = 'Annualy salary =' + annualy
-    #     return jsonify(resp_json)
-    # elif request.method == 'DELETE':
-    #     salary = int(request.form.get('salary'))
-    #     annualy = str(salary * 24)
-    #     resp_str = '2 years salary =' + annualy
-    #     return resp_str
-    #
-    # elif request.method == 'POST':
-    #     salary = int(request.json['salary'])
-    #     name = request.json['name']
-    #     age = request.json['age']
-    #     annualy = str(salary * 12)
-    #
-    #     resp_json = {
-    #         'name': name,
-    #         'age': age,
-    #         'annualy': annualy
-    #     }
-    #
-    #     resp_str = 'Annualy salary =' + annualy
-    #     return jsonify(resp_json)
-
 
 @app.route('/work', methods=['POST'])
 def work():
